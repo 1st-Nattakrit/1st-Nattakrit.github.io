@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to My Github CV</title>
         <style>
-            #container{
-                display:flex;
-                flex-wrap: wrap;
-            }
-            #container>div{
-                font-size: 20px;
-                margin:20px;
-                padding: 20px;
-                width:auto;
-            }
             #grid{
                 display:grid;
+                flex-wrap: wrap;
                 padding:20px;
-                row-gap: 10px;
-                grid-template-columns: auto 70%;
+                grid-template-columns: auto auto;
             }
             .grid-item{
                 background-color:rgba(255,255,255,0.4);
@@ -28,14 +19,14 @@
         </style>
     </head>
     <body background="background.jpg" style="background-size:200%;">
-       <div id="grid" id="container"style="text-align: center;">
+       <div id="grid"style="text-align: center;">
             <div class="grid-item">
                <div>
-                    <h2 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:50px;margin-top: -1px;">
+                    <h1 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:50px;margin-top: -1px;">
                     My Profile
-                    </h2>
+                    </h1>
                     <div style="text-align:center;margin-top: -8px;">
-                        <img src="newprofile.jpg" width="300px" height="200px">
+                        <img src="newprofile.jpg" width="300" height="200">
                     </div>
                     <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;">
                         Name : Mr.Nattakrit Jitrayont
