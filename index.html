@@ -2,26 +2,51 @@
 <html lang="en">
     <head>
         <title>Welcome to My Github CV</title>
+        <style>
+            #grid{
+                display:grid;
+                padding:20px;
+                row-gap: 10px;
+                grid-template-columns: 30% 70%;
+            }
+            .grid-item{
+                background-color:rgba(255,255,255,0.4);
+                font-size:20px;
+                padding:20px
+                
+            }
+        </style>
     </head>
     <body background="background.jpg">
-        <div style="text-align:center">
-            <h1 style="font-family: cursive;font-weight: 100;font-style: italic;font-size:50px;">Welcome to MyCV</h1> 
-            <h1 style="font-family: cursive;font-weight: 100;font-style: italic;font-size:20px;">By Nattakrit Jitrayont</h1> 
-        </div>
-        <div style="text-align: center;backdrop-filter: 10px;background-color:rgba(255,255,255,0.4);">
-            <h2 style="font-family: cursive;font-weight: 100;font-style: italic;font-size:20px;">
+       <div id="grid" style="text-align: center;">
+            <div class="grid-item">
+            <h1 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:50px;">Welcome to MyCV</h1> 
+            <h1 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:20px;">By Nattakrit Jitrayont</h1>
+            <h2 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;">
                 My Profile
             </h2>
             <div style="text-align:center">
-                <img src="profile.jpg" width="200px" height="200px" border="2">
+                <img src="newprofile.jpg" width="300px" height="200px" border="1">
            </div>
-            <div>
-                First Name : Nattakrit
+            <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:20px;">
+                Name : Mr.Nattakrit Jitrayont
             </div>
-            <div>
-                Last Name : Jitrayont
+            <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:20px;">
+                Birthdate : 19 July 1996
             </div>
-        </div>
-
+            <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:20px;">
+                Age : 25
+            </div>
+            <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:20px;">
+                Tel : 064-250-6391
+            </div> 
+            </div>
+            <div class="grid-item" style="background-color: rgba(255,255,255,0.6);">
+                <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:50px;">
+                    Overall
+                </div>
+            </div>
+       </div>
     </body>
+    
 </html>
