@@ -8,22 +8,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
              document.addEventListener('DOMContentLoaded',function() {
-                 document.querySelectorAll('button').forEach(function(button) {
-                     button.onclick = function(){
-                         document.querySelector('h1').style.color=button.dataset.color;
-                         document.querySelector('h2').style.color=button.dataset.color;
-                         document.querySelector('h3').style.color=button.dataset.color;
-                         document.querySelector('h4').style.color=button.dataset.color;
-                         document.querySelector('h5').style.color=button.dataset.color;
-                         document.querySelector('h6').style.color=button.dataset.color;
-                         document.querySelector('h7').style.backgroundColor = button.dataset.color;
+                document.querySelector('#lightmode').onclick = function() {
+                    document.querySelector('h1').style.color='rgba(21,0,150)';
+                    document.querySelector('h2').style.color='rgba(21,0,150)';
+                    document.querySelector('h3').style.color='rgba(21,0,150)';
+                    document.querySelector('h4').style.color='rgba(21,0,150)';
+                    document.querySelector('h5').style.color='rgba(21,0,150)';
+                    document.querySelector('h6').style.color='rgba(21,0,150)';
+                    document.querySelector('h7').style.backgroundColor ='rgba(21,0,150)';
+                    document.querySelector('div1').style.color='rgba(0,0,0)';
+                    document.querySelector('div3').style.color='rgba(0,0,0)';
+                    document.querySelector('div4').style.color='rgba(0,0,0)';
+                    document.querySelector('div5').style.color='rgba(0,0,0)';
+                    document.querySelector('div6').style.color='rgba(0,0,0)';
+                    document.querySelector('div7').style.color='rgba(0,0,0)';
+                    document.querySelector('div8').style.color='rgba(0,0,0)';
+                    document.querySelector('div9').style.color='rgba(0,0,0)';
+                    document.querySelector('div10').style.color='rgba(0,0,0)';
+                    document.querySelector('div2').style.backgroundColor ='rgba(200,205,210,0.8)';
+                    document.querySelector('body').background='white.gif';
+                }
+                document.querySelector('#darkmode').onclick = function(){
+                    document.querySelector('h1').style.color='rgba(252,159,21)';
+                    document.querySelector('h2').style.color='rgba(252,159,21)';
+                    document.querySelector('h3').style.color='rgba(252,159,21)';
+                    document.querySelector('h4').style.color='rgba(252,159,21)';
+                    document.querySelector('h5').style.color='rgba(252,159,21)';
+                    document.querySelector('h6').style.color='rgba(252,159,21)';
+                    document.querySelector('h7').style.backgroundColor ='rgba(252,159,21)';
+                    document.querySelector('div1').style.color='rgba(255,255,255)';
+                    document.querySelector('div3').style.color='rgba(255,255,255)';
+                    document.querySelector('div4').style.color='rgba(255,255,255)';
+                    document.querySelector('div5').style.color='rgba(255,255,255)';
+                    document.querySelector('div6').style.color='rgba(255,255,255)';
+                    document.querySelector('div7').style.color='rgba(255,255,255)';
+                    document.querySelector('div8').style.color='rgba(255,255,255)';
+                    document.querySelector('div9').style.color='rgba(255,255,255)';
+                    document.querySelector('div10').style.color='rgba(255,255,255)';
+                    document.querySelector('div2').style.backgroundColor ='rgba(0,0,0)';
+                    document.querySelector('body').background='animate.gif';
 
-                         
-                     };
-                     
-                 });
+                }                        
+            });
                  
-             });        
+                    
         </script>
         <style>
             
@@ -56,38 +84,33 @@
        <div id="grid">
             <h7 class="grid-item">
                 <div style="text-align:center;margin-top: 10px;">
-                    <button data-color="rgba(47,230,255)">Dark Mode</button>
-                    <img src="home.png" width="40" height="40">
+                    <button id="lightmode" style="border:0px solid black; background-color: transparent;"><img src="home.png" width="30" height="30"></button>
+                    
                     
                 </div>
                 <div style="text-align:center;margin-top: 10px;">
-                    <button data-color="rgba(252,159,21)">Normal Mode</button>
-                    <img src="profile icon.png" width="40" height="40">
+                    <button id="darkmode" style="border:0px solid black; background-color: transparent;"><img src="profile icon.png" width="30" height="30"></button>
+                    
                 </div>            
             </h7>
             
-            <div class="grid-item" style="background-color: rgba(0,0,0);">
-                <div>
-                    <h1 style="color:rgba(252, 159, 21,0.8);font-family:system-ui;font-weight:100;font-style:italic;font-size:50px;margin-top: -1px;text-align:center;">
+            <div2 class="grid-item" style="background-color: rgba(0,0,0);text-align:center;">
+                <div style="text-align:center;">
+                    <h1 style="color:rgba(252, 159, 21);font-family:system-ui;font-weight:100;font-style:italic;font-size:50px;margin-top: -1px;text-align:center;">
                         My Profile
                     </h1>
                     <div style="text-align:center;margin-top: -8px;">
                         <img src="newprofile.jpg" width="300" height="200">
                     </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Name : Mr.Nattakrit Jitrayont
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Birthdate : 19 July 1996
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Age : 25
-                    </div>
+                    <div3 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                        Name : Mr.Nattakrit Jitrayont<br>Birthdate : 19 July 1996<br>Age : 25
+                    </div3>
+                    
                     
                     
                 </div>
-                <div>
-                    <h2 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 10px;text-align:center;">
+                <div style="text-align:center;">
+                    <h2 style="color:rgba(252, 159, 21);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 10px;text-align:center;">
                         About me
                     </h2>
                     <div1 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;">
@@ -105,78 +128,61 @@
                         Fred kicked the ball.
                         His dog ran after the ball.
                     </div1>
-                    <h3 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px; margin-top:30px;text-align:center;">
+                    <h3 style="color:rgba(252, 159, 21);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px; margin-top:30px;text-align:center;">
                         Education
                     </h3>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        2015 - Vocational Certificated in Electronic Department
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        2019 - High Vocational Certificated in Instrument and Control Technology Department
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        2019-present - Studying in Instrumentation Engineering Department
-                    </div>
+                    <div4 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                        2015 - Vocational Certificated in Electronic Department<br>2019 - High Vocational Certificated in Instrument and Control Technology Department
+                        <br>2019-present - Studying in Instrumentation Engineering Department
+                    </div4>
+                    
                     
                 </div>
                 <div>
-                    <h4 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                    <h4 style="color:rgba(252, 159, 21);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Job Experience
                     </h4>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        2014 - Interns at Star Petroleum Refining Public Co,Ltd
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        2018-2019 - Interns at SCG Chemical (Thai Plastic and Chemicals Public Co,Ltd)
-                    </div>
+                    <div5 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                        2014 - Interns at Star Petroleum Refining Public Co,Ltd<br>2018-2019 - Interns at SCG Chemical (Thai Plastic and Chemicals Public Co,Ltd)
+                    </div5>
+                   
 
                 </div>
                 <div>
-                    <h5 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                    <h5 style="color:rgba(252, 159, 21);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Skills
                     </h5>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Good at Calibrating Skills
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Good at C-Programming
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Medium at PLC-Programming & Coding
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Medium at Python-Programming
-                    </div>
-
+                    <div6 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                        Good at Calibrating Skills<br>Good at C-Programming<br>Medium at PLC-Programming & Coding<br>Medium at Python-Programming
+                    </div6>
+                   
                 </div>
                 <div>
-                    <h6 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                    <h6 style="color:rgba(252, 159, 21);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Contact
                     </h6>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Email : s6201072510054@email.kmutnb.ac.th
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
-                        Tel : 064-250-6391
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
+                    <div7 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                        Email : s6201072510054@email.kmutnb.ac.th<br> Tel : 064-250-6391
+                    </div7>
+                    
+                    <div8 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
                         Facebook
                         <div style="margin-top: 10px;">
                             <a href="https://www.facebook.com/love555evol"><img src="facebook.png" width="115" height="115"></a>
                         </div>                       
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
+                    </div8>
+                    <div9 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
                         Line
                         <div style="margin-top: -10px;">
                             <a href="https://line.me/ti/p/XMxXg7PLxq"><img src="LINE.png" width="170" height="170"></a>
                         </div>
-                    </div>
-                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: -15px;">
+                    </div9>
+                    <div10 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: -15px;">
                         Instragram
                         <div style="margin-top: 15px;">
                             <a href="https://www.instagram.com/1st_ntk/"><img src="ig.png" width="125" height="125"></a>
                         </div>
-                    </div>
+                    </div10>
 
                 </div>
             </div2>
