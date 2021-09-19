@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Welcome to My Github CV</title>
+        <link rel="icon" type="image/png" href="cv.png" />
+        <title>
+            Welcome to My Github CV
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
-           
+             document.addEventListener('DOMContentLoaded',function() {
+                 document.querySelectorAll('button').forEach(function(button) {
+                     button.onclick = function(){
+                         document.querySelector('h1').style.color=button.dataset.color;
+                         document.querySelector('h2').style.color=button.dataset.color;
+                         document.querySelector('h3').style.color=button.dataset.color;
+                         document.querySelector('h4').style.color=button.dataset.color;
+                         document.querySelector('h5').style.color=button.dataset.color;
+                         document.querySelector('h6').style.color=button.dataset.color;
+                         document.querySelector('h7').style.backgroundColor = button.dataset.color;
+
+                         
+                     };
+                     
+                 });
+                 
+             });        
         </script>
         <style>
             
@@ -35,41 +54,43 @@
     </head>
     <body background="animate.gif">
        <div id="grid">
-            <div class="grid-item">
-                <div style="text-align:center;margin-top: 400px;">
+            <h7 class="grid-item">
+                <div style="text-align:center;margin-top: 10px;">
+                    <button data-color="rgba(47,230,255)">Dark Mode</button>
                     <img src="home.png" width="40" height="40">
                     
                 </div>
                 <div style="text-align:center;margin-top: 10px;">
+                    <button data-color="rgba(252,159,21)">Normal Mode</button>
                     <img src="profile icon.png" width="40" height="40">
                 </div>            
-            </div>
+            </h7>
             
-            <div2 class="grid-item" style="background-color: rgba(0,0,0);">
-                <div style="color:white">
+            <div class="grid-item" style="background-color: rgba(0,0,0);">
+                <div>
                     <h1 style="color:rgba(252, 159, 21,0.8);font-family:system-ui;font-weight:100;font-style:italic;font-size:50px;margin-top: -1px;text-align:center;">
                         My Profile
                     </h1>
                     <div style="text-align:center;margin-top: -8px;">
                         <img src="newprofile.jpg" width="300" height="200">
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Name : Mr.Nattakrit Jitrayont
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Birthdate : 19 July 1996
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Age : 25
                     </div>
                     
                     
                 </div>
-                <div style="color:white">
+                <div>
                     <h2 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 10px;text-align:center;">
                         About me
                     </h2>
-                    <div1 style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;">
+                    <div1 style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;">
                         &emsp;&emsp;Fred had a red rubber ball. He kicked the ball.
                         It flew through the air. He picked it up.
                         He threw it against a wall. The ball came back to Fred.
@@ -84,73 +105,73 @@
                         Fred kicked the ball.
                         His dog ran after the ball.
                     </div1>
-                    <div style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px; margin-top:30px;text-align:center;">
+                    <h3 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px; margin-top:30px;text-align:center;">
                         Education
-                    </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    </h3>
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         2015 - Vocational Certificated in Electronic Department
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         2019 - High Vocational Certificated in Instrument and Control Technology Department
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         2019-present - Studying in Instrumentation Engineering Department
                     </div>
                     
                 </div>
-                <div style="color:white">
-                    <h3 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                <div>
+                    <h4 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Job Experience
-                    </h3>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    </h4>
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         2014 - Interns at Star Petroleum Refining Public Co,Ltd
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         2018-2019 - Interns at SCG Chemical (Thai Plastic and Chemicals Public Co,Ltd)
                     </div>
 
                 </div>
-                <div style="color:white">
-                    <h4 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                <div>
+                    <h5 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Skills
-                    </h4>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    </h5>
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Good at Calibrating Skills
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Good at C-Programming
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Medium at PLC-Programming & Coding
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Medium at Python-Programming
                     </div>
 
                 </div>
-                <div style="color:white">
-                    <h4 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
+                <div>
+                    <h6 style="color:rgba(252, 159, 21,0.8);font-family: system-ui;font-weight: 100;font-style: italic;font-size:30px;margin-top: 30px;text-align:center;">
                         Contact
-                    </h4>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    </h6>
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Email : s6201072510054@email.kmutnb.ac.th
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;">
                         Tel : 064-250-6391
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
                         Facebook
                         <div style="margin-top: 10px;">
                             <a href="https://www.facebook.com/love555evol"><img src="facebook.png" width="115" height="115"></a>
                         </div>                       
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: 10px;">
                         Line
                         <div style="margin-top: -10px;">
                             <a href="https://line.me/ti/p/XMxXg7PLxq"><img src="LINE.png" width="170" height="170"></a>
                         </div>
                     </div>
-                    <div style="font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: -15px;">
+                    <div style="color:white;font-family: system-ui;font-weight: 100;font-style: italic;font-size:auto;text-align:center;margin-top: -15px;">
                         Instragram
                         <div style="margin-top: 15px;">
                             <a href="https://www.instagram.com/1st_ntk/"><img src="ig.png" width="125" height="125"></a>
