@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
              document.addEventListener('DOMContentLoaded',function() {
-                document.querySelector('#lightmode').onclick = function() {
+                document.querySelector('#lightmode').onmouseover = function() {
                     document.querySelector('h1').style.color='rgba(21,0,150)';
                     document.querySelector('h2').style.color='rgba(21,0,150)';
                     document.querySelector('h3').style.color='rgba(21,0,150)';
@@ -18,6 +18,29 @@
                     document.querySelector('h7').style.backgroundColor ='rgba(21,0,150)';
                     document.querySelector('h8').style.color='rgba(21,0,150)';
                     document.querySelector('h9').style.backgroundColor='rgba(21,0,150)';
+                    document.querySelector('div1').style.color='rgba(0,0,0)';
+                    document.querySelector('div3').style.color='rgba(0,0,0)';
+                    document.querySelector('div4').style.color='rgba(0,0,0)';
+                    document.querySelector('div5').style.color='rgba(0,0,0)';
+                    document.querySelector('div6').style.color='rgba(0,0,0)';
+                    document.querySelector('div7').style.color='rgba(0,0,0)';
+                    document.querySelector('div8').style.color='rgba(0,0,0)';
+                    document.querySelector('div9').style.color='rgba(0,0,0)';
+                    document.querySelector('div10').style.color='rgba(0,0,0)';
+                    document.querySelector('div11').style.color='rgba(0,0,0)';
+                    document.querySelector('div2').style.backgroundColor ='rgba(200,205,210,0.8)';
+                    document.querySelector('body').background='white.gif';
+                }
+                document.querySelector('#redmode').onclick = function() {
+                    document.querySelector('h1').style.color='rgba(21,0,150)';
+                    document.querySelector('h2').style.color='rgba(21,0,150)';
+                    document.querySelector('h3').style.color='rgba(21,0,150)';
+                    document.querySelector('h4').style.color='rgba(21,0,150)';
+                    document.querySelector('h5').style.color='rgba(21,0,150)';
+                    document.querySelector('h6').style.color='rgba(21,0,150)';
+                    document.querySelector('h7').style.backgroundColor ='rgba(255,0,0)';
+                    document.querySelector('h8').style.color='rgba(21,0,150)';
+                    document.querySelector('h9').style.backgroundColor='rgba(255,0,0)';
                     document.querySelector('div1').style.color='rgba(0,0,0)';
                     document.querySelector('div3').style.color='rgba(0,0,0)';
                     document.querySelector('div4').style.color='rgba(0,0,0)';
@@ -117,7 +140,7 @@
             
             <div2 class="grid-item" style="background-color: rgba(0,0,0);text-align:center;">
                 <div id="Profile" style="text-align:center;">
-                    <h1 style="color:rgba(252, 159, 21);font-family:system-ui;font-weight:100;font-style:italic;font-size:50px;margin-top: -1px;text-align:center;">
+                    <h1 style="color:rgba(252, 159, 21);font-family:system-ui;font-weight:bold;font-style: normal;font-size:50px;margin-top: -1px;text-align:center;">
                         My Profile
                     </h1>
                     <div style="text-align:center;margin-top: -8px;">
@@ -218,7 +241,9 @@
             </div2>
             <h9 class="grid-item" style="text-align:center;">
                 <button id="lightmode" style="border:0px solid black; background-color: transparent;"><img src="light mode.png" width="30" height="30"></button1>
+                <button id="redmode" style="border:0px solid black; background-color: transparent;"><img src="light mode.png" width="30" height="30"></button1>
                 <button id="darkmode" style="border:0px solid black; background-color: transparent;"><img src="dark mode.png" width="30" height="30"></button1>
+
                
                     
             
